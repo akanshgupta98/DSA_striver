@@ -1,0 +1,31 @@
+Algorithms in this section:
+1. To extract last no from a integer: modulus by 10. (N % 10)
+2. Palindrome-> If reverse matches the original, it is a Palindrome
+3. GCD -> Euclidean Algorithm:
+    GCD (A,b) = GCD(A-b,b), if A > b
+    When A or B == 0 , we found the GCD. 
+    Ex: 20,15 -> 5,15 -> 10,5 -> 5,5 0,5
+4. For finding the divisors, we need to only loop till sqrt(N)
+    Logic:
+        lets look at divisors of 12. 
+        12:
+            1x12
+            2x6
+            3x4
+            4x3
+            6x2
+            12x1
+    so it can be seen that after 3 square, the image becomes mirror. 
+    so it repeats. Will be more clear when take example of 36. 
+        36:
+            1x36
+            2x18
+            3x12
+            4x9
+            6x6
+            9x4
+            12x3
+            18x2
+            36x1
+    In this, it can be clearly seen that after 6x6, the divisors repeat. 
+    so, we can say that sqrt(N) will be a turning point. 
